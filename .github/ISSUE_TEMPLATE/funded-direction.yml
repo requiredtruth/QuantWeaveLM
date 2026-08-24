@@ -1,0 +1,35 @@
+name: Funded direction
+description: Suggest work and cite a confirmed, unclaimed public transaction hash
+title: "[Funded direction] "
+labels: ["funded-direction"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Never post private keys, seed phrases, exchange credentials, wallet signatures, or other
+        secrets. A public transaction hash is not proof of wallet ownership and cannot be reused.
+        Donations do not buy support, ownership, returns, deadlines, priority, or acceptance.
+  - type: dropdown
+    id: asset
+    attributes:
+      label: Asset and exact network
+      options:
+        - BTC / Bitcoin
+        - ETH or EVM asset / explicitly identified EVM network
+        - DOGE / Dogecoin
+    validations:
+      required: true
+  - type: input
+    id: transaction
+    attributes:
+      label: Confirmed public transaction hash
+      placeholder: Public transaction hash only—never a secret
+    validations:
+      required: true
+  - type: textarea
+    id: direction
+    attributes:
+      label: Requested direction
+      description: Describe the offline research feature and reproducible acceptance test.
+    validations:
+      required: true
