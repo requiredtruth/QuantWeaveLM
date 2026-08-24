@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "bins": {
+    "edges": [-0.01, 0.01],
+    "labels": ["down", "flat", "up"]
+  },
+  "models": ["momentum", "reversion"],
+  "split": {
+    "calibration_rows": 20,
+    "embargo_rows": 2,
+    "test_rows": 10,
+    "minimum_embargo_seconds": 172800
+  },
+  "optimizer": {
+    "iterations": 250,
+    "learning_rate": 0.05,
+    "temperature_min": 0.5,
+    "temperature_max": 3.0,
+    "temperature_steps": 101
+  }
+}
