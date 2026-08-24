@@ -3,7 +3,7 @@
 Leakage-resistant calibration and evaluation for **ordered crypto return probability forecasts**. QuantWeaveLM combines probability vectors from multiple models, learns mixture weights on a declared calibration prefix, applies multiclass temperature scaling, leaves an explicit embargo, and reports untouched test metrics. It never downloads market data, connects an exchange, places an order, or claims profit.
 
 ```console
-$ ./doit.sh
+$ ./install.sh
 ...
 QuantWeaveLM deterministic calibration report
 rows calibration=20 embargo=2 test=10
