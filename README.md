@@ -106,3 +106,8 @@ If this saves research time, [support continued production](SUPPORT.md). A confi
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+
+## Standard launcher
+
+`./run.sh` is the normal entry point. It runs `./install.sh` automatically when setup is missing, then opens the PySide6 control panel with live output and actions for the demo, tests, repair, and stop. Use `./cli.sh` for CLI-only operation.
